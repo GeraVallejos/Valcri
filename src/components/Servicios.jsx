@@ -23,7 +23,7 @@ const Servicios = () => {
   ];
 
   return (
-    <section className="py-24 bg-slate-50 overflow-hidden">
+    <section className="py-12 bg-slate-50 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">Nuestra Especialidad</span>

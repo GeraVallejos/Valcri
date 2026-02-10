@@ -12,7 +12,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative w-full h-[85vh] min-h-[600px] flex items-center overflow-hidden bg-slate-900 font-sans">
+    <section className="relative w-full h-[85vh] min-h-[900px] flex items-center overflow-hidden bg-slate-900 font-sans">
       
       {/* 1. CAPA DE FONDO (POSICIÓN ABSOLUTA)
           'absolute inset-0' asegura que la imagen cubra todo el contenedor del section.

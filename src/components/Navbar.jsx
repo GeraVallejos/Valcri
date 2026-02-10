@@ -13,10 +13,16 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-2">
-              <img src="/valcri.png" alt="Logo ValCri" className="w-15 h-15 rounded-full border-2 border-orange-500" />
-            <span className="text-2xl font-bold text-white tracking-tight">
-              Construcciones ValCri
-            </span>
+              <img src="/valcri_icono.png" alt="Logo ValCri" className="w-12 h-12 rounded-full border-2 border-orange-500" />
+            <div className="flex flex-col leading-none">
+              
+                  <span className="text-2xl font-black tracking-tighter text-white">
+                    VALCRI
+                  </span>
+                  <span className="text-[10px] font-bold tracking-[0.2em] text-[#FFB800] uppercase">
+                    Construcciones
+                  </span>
+                </div>
           </div>
 
           {/* Menú Desktop */}

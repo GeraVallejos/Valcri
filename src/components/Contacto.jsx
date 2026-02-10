@@ -2,7 +2,7 @@ import { Phone, Mail, Send } from 'lucide-react';
 
 const Contacto = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="pt-12 pb-12 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Información Lateral */}

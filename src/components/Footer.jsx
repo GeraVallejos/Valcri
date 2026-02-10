@@ -23,7 +23,7 @@ const Footer = () => {
         {/* Columna 1: Branding */}
         <div className="space-y-6">
           <div className="flex items-center gap-2">
-              <img src="/valcri.png" alt="Logo ValCri" className="w-15 h-15 rounded-full border-2 border-orange-500" />
+              <img src="/valcri_icono.png" alt="Logo ValCri" className="w-15 h-15 rounded-full border-2 border-orange-500" />
             <span className="text-xl font-bold text-white tracking-tight">
               Construcciones ValCri
             </span>
@@ -83,7 +83,7 @@ const Footer = () => {
       {/* Sección Inferior: Copyright */}
       <div className="border-t border-white/5">
         <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs tracking-wider uppercase">
-          <p>© 2026 Construcciones ValCri SPA. Todos los derechos reservados.</p>
+          <p>© 2026 GeraVallejos. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacidad</a>
             <a href="#" className="hover:text-white transition-colors">Términos</a>

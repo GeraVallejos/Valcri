@@ -2,7 +2,7 @@ import { Award, Target, Eye, Users } from 'lucide-react';
 
 const Nosotros = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="pt-12 bg-white overflow-hidden pb-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           

@@ -13,9 +13,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-2">
-           
               <img src="/valcri.png" alt="Logo ValCri" className="w-15 h-15 rounded-full border-2 border-orange-500" />
-           
             <span className="text-2xl font-bold text-white tracking-tight">
               Construcciones ValCri
             </span>

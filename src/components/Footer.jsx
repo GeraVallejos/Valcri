@@ -23,11 +23,9 @@ const Footer = () => {
         {/* Columna 1: Branding */}
         <div className="space-y-6">
           <div className="flex items-center gap-2">
-            <div className="bg-orange-600 p-1.5 rounded-md">
-              <BrickWall className="text-white w-5 h-5" />
-            </div>
+              <img src="/valcri.png" alt="Logo ValCri" className="w-15 h-15 rounded-full border-2 border-orange-500" />
             <span className="text-xl font-bold text-white tracking-tight">
-              VÉRTICE<span className="text-orange-500">.</span>
+              Construcciones ValCri
             </span>
           </div>
           <p className="text-sm leading-relaxed">
@@ -76,7 +74,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-3">
               <Mail className="text-orange-500 w-5 h-5 shrink-0" />
-              <span>contacto@vertice.cl</span>
+              <span>contacto@valcri.cl</span>
             </li>
           </ul>
         </div>

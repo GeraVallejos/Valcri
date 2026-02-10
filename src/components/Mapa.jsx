@@ -69,7 +69,7 @@ const Mapa = () => {
               allowFullScreen="" 
               loading="lazy"
             ></iframe>
-          </div>&output=embed
+          </div>
           
         </div>
       </div>

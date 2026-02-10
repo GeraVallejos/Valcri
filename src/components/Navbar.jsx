@@ -13,16 +13,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-2">
-              <img src="/valcri_icono.png" alt="Logo ValCri" className="w-12 h-12 rounded-full border-2 border-orange-500" />
+            <img src="/valcri_icono.png" alt="Logo ValCri" className="w-12 h-12 rounded-full border-2 border-orange-500" />
             <div className="flex flex-col leading-none">
-              
-                  <span className="text-2xl font-black tracking-tighter text-white">
-                    VALCRI
-                  </span>
-                  <span className="text-[10px] font-bold tracking-[0.2em] text-[#FFB800] uppercase">
-                    Construcciones
-                  </span>
-                </div>
+              <span className="text-2xl font-black tracking-tighter text-white">
+                VALCRI
+              </span>
+              <span className="text-[10px] font-bold tracking-[0.2em] text-[#FFB800] uppercase">
+                Construcciones
+              </span>
+            </div>
           </div>
 
           {/* Menú Desktop */}
@@ -35,15 +34,15 @@ const Navbar = () => {
 
           {/* Botón de Contacto y Toggle Móvil */}
           <div className="flex items-center gap-4">
-            <a 
-              href="tel:+56912345678" 
+            <a
+              href="tel:+56912345678"
               className="hidden md:flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full font-semibold transition-all border border-white/10 backdrop-blur-md"
             >
               <Phone className="w-4 h-4 text-orange-500" />
               <span>+56 9 56846193</span>
             </a>
-            
-            <button 
+
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-white p-1 hover:bg-white/10 rounded-md transition-colors"
               aria-label="Alternar menú"

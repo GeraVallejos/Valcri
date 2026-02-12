@@ -7,16 +7,16 @@ const Servicios = () => {
 
   const services = [
     {
-      title: "Construcción de Casas",
-      description: "Proyectos llave en mano. Desde la cimentación hasta las terminaciones finas, construimos el hogar de tus sueños con estándares residenciales premium.",
-      icon: <Home className="w-8 h-8" />,
-      image: "remodelacion_casa.avif"
-    },
-    {
       title: "Estructuras Metálicas",
       description: "Diseño, fabricación y montaje de estructuras de alta resistencia para galpones, naves industriales y refuerzos estructurales de gran escala.",
       icon: <Factory className="w-8 h-8" />,
       image: "estructuras_metalicas.jpg"
+    },
+    {
+      title: "Construcción de Casas",
+      description: "Proyectos llave en mano. Desde la cimentación hasta las terminaciones finas, construimos el hogar de tus sueños con estándares residenciales premium.",
+      icon: <Home className="w-8 h-8" />,
+      image: "remodelacion_casa.avif"
     },
     {
       title: "Obras Menores",

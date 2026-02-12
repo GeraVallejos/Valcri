@@ -133,8 +133,8 @@ const Contacto = () => {
               <div className="sm:col-span-2 space-y-2">
                 <label className="text-sm font-bold text-slate-700 ml-1">Tipo de Servicio</label>
                 <select name="service" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white appearance-none text-slate-900">
-                  <option value="Construcción de Casas">Construcción de Casa</option>
                   <option value="Estructuras Metálicas">Estructuras Metálicas</option>
+                  <option value="Construcción de Casas">Construcción de Casa</option>
                   <option value="Obras Menores">Obras Menores / Remodelación</option>
                   <option value="Otro Proyecto">Otro Proyecto</option>
                 </select>

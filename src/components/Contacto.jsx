@@ -41,7 +41,7 @@ const Contacto = () => {
   };
 
   return (
-    <section className="pt-12 pb-12 bg-white relative overflow-hidden">
+    <section className="pt-12 pb-12 bg-white relative overflow-hidden" id='contacto' data-theme="light">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Información Lateral */}
@@ -53,26 +53,25 @@ const Contacto = () => {
             <p className="text-slate-600 mb-10 leading-relaxed">
               Nuestro equipo de expertos está listo para asesorarte en la planificación técnica y financiera de tu obra.
             </p>
-
             <div className="space-y-8">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center text-orange-600 shrink-0">
-                  <Phone size={24} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wide">Llamada Directa</h4>
-                  <p className="text-slate-600">+56 9 56846193</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center text-orange-600 shrink-0">
-                  <Mail size={24} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wide">Correo Electrónico</h4>
-                  <p className="text-slate-600">contacto@valcri.cl</p>
-                </div>
-              </div>
+              {[
+                { icon: <Phone size={24} />, label: "Llamada Directa", value: "+56 9 56846193", href: "tel:+56956846193" },
+                { icon: <Mail size={24} />, label: "Correo Electrónico", value: "contacto@valcri.cl", href: "mailto:contacto@valcri.cl" }
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.href}
+                  className="flex items-center gap-4 group p-4 -ml-4 rounded-2xl hover:bg-slate-50 transition-colors"
+                >
+                  <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center text-orange-600 shrink-0 group-hover:bg-orange-600 group-hover:text-white transition-all">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wide">{item.label}</h4>
+                    <p className="text-slate-600 group-hover:text-orange-600 transition-colors">{item.value}</p>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
 
@@ -101,7 +100,7 @@ const Contacto = () => {
             <form onSubmit={onSubmit} className="grid sm:grid-cols-2 gap-6">
               {/* --- CAMPOS OCULTOS DE CONFIGURACIÓN --- */}
               <input type="hidden" name="subject" value="Nueva solicitud de presupuesto" />
-              <input type="hidden" name="from_name" value="Mi Constructora Web" />
+              <input type="hidden" name="from_name" value="Desde pagina valcri.cl" />
 
               {/* Honeypot (Anti-spam): Si un bot lo llena, el correo no se envía */}
               <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
@@ -134,10 +133,10 @@ const Contacto = () => {
               <div className="sm:col-span-2 space-y-2">
                 <label className="text-sm font-bold text-slate-700 ml-1">Tipo de Servicio</label>
                 <select name="service" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white appearance-none text-slate-900">
-                  <option>Construcción de Casa</option>
-                  <option>Estructuras Metálicas</option>
-                  <option>Obras Menores / Remodelación</option>
-                  <option>Otro Proyecto</option>
+                  <option value="Construcción de Casas">Construcción de Casa</option>
+                  <option value="Estructuras Metálicas">Estructuras Metálicas</option>
+                  <option value="Obras Menores">Obras Menores / Remodelación</option>
+                  <option value="Otro Proyecto">Otro Proyecto</option>
                 </select>
               </div>
 

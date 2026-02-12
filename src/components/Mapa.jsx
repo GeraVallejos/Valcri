@@ -1,8 +1,10 @@
 import { MapPin, Clock, ExternalLink } from "lucide-react";
 
+
 const Mapa = () => {
+
   return (
-    <section className="py-12 bg-slate-900 relative overflow-hidden">
+    <section className="py-12 bg-slate-900 relative overflow-hidden" id="mapa" data-theme="dark">
       {/* Decoración de fondo */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-orange-600/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
       

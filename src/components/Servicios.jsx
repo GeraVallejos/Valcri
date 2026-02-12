@@ -1,29 +1,33 @@
 import { Home, Factory, Hammer, ShieldCheck, ArrowRight } from 'lucide-react';
+import { useScrollSection } from '../hooks/useScrollSection';
 
 const Servicios = () => {
+
+  const scrollTo = useScrollSection();
+
   const services = [
     {
       title: "Construcción de Casas",
       description: "Proyectos llave en mano. Desde la cimentación hasta las terminaciones finas, construimos el hogar de tus sueños con estándares residenciales premium.",
       icon: <Home className="w-8 h-8" />,
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop"
+      image: "remodelacion_casa.avif"
     },
     {
       title: "Estructuras Metálicas",
       description: "Diseño, fabricación y montaje de estructuras de alta resistencia para galpones, naves industriales y refuerzos estructurales de gran escala.",
       icon: <Factory className="w-8 h-8" />,
-      image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=800&auto=format&fit=crop"
+      image: "estructuras_metalicas.jpg"
     },
     {
       title: "Obras Menores",
       description: "Ampliaciones, remodelaciones de baños y cocinas, pintura, techumbres y mantenimiento general con personal altamente calificado.",
       icon: <Hammer className="w-8 h-8" />,
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop"
+      image: "/cocina_obras_menores.jpg"
     }
   ];
 
   return (
-    <section className="py-12 bg-slate-50 overflow-hidden">
+    <section className="py-12 bg-slate-50 overflow-hidden" id='servicios' data-theme="light">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">Nuestra Especialidad</span>
@@ -38,9 +42,9 @@ const Servicios = () => {
             <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
               {/* Imagen de Servicio */}
               <div className="relative h-56 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
+                <img
+                  src={service.image}
+                  alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
@@ -48,7 +52,7 @@ const Servicios = () => {
                   {service.icon}
                 </div>
               </div>
-              
+
               {/* Contenido */}
               <div className="p-8 flex-grow flex flex-col">
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">{service.title}</h3>
@@ -59,8 +63,18 @@ const Servicios = () => {
                   <span className="text-slate-900 font-bold text-sm flex items-center gap-2 italic">
                     <ShieldCheck className="text-orange-600 w-4 h-4" /> Garantía de calidad
                   </span>
-                  <button className="text-orange-600 hover:text-orange-700 font-bold text-sm flex items-center gap-1 group/btn transition-colors">
-                    Saber más <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
+                  <button
+                    onClick={() => {
+                      scrollTo("contacto");
+                      // Opcional: Pequeño delay para que el select cambie después del inicio del scroll
+                      setTimeout(() => {
+                        const select = document.getElementsByName("service")[0];
+                        if (select) select.value = service.title;
+                      }, 500);
+                    }}
+                    className="text-orange-600 hover:text-orange-700 font-bold text-sm flex items-center gap-1 group/btn transition-colors"
+                  >
+                    Cotizar Proyecto <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import { ArrowRight, HardHat, Ruler, CheckCircle2 } from 'lucide-react';
+import { useScrollSection } from '../hooks/useScrollSection';
 
 /**
  * Componente Hero para Empresas de Construcción.
@@ -10,9 +11,10 @@ const Hero = () => {
     { id: 2, label: "Proyectos Entregados", value: "320", icon: <CheckCircle2 className="w-6 h-6 text-orange-500" /> },
     { id: 3, label: "Profesionales", value: "50+", icon: <Ruler className="w-6 h-6 text-orange-500" /> },
   ];
+  const scrollTo = useScrollSection();
 
   return (
-    <section className="relative w-full h-[85vh] min-h-[900px] flex items-center overflow-hidden bg-slate-900 font-sans">
+    <section className="relative w-full h-[85vh] min-h-[900px] flex items-center overflow-hidden bg-slate-900 font-sans" id='inicio' data-theme="dark">
       
       {/* 1. CAPA DE FONDO (POSICIÓN ABSOLUTA)
           'absolute inset-0' asegura que la imagen cubra todo el contenedor del section.
@@ -57,7 +59,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-2 justify-center lg:justify-start">
-              <button className="flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-orange-600/20 hover:shadow-orange-600/40 hover:-translate-y-1">
+              <button onClick={() => scrollTo("contacto")} className="flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-orange-600/20 hover:shadow-orange-600/40 hover:-translate-y-1">
                 Cotizar Proyecto
                 <ArrowRight className="w-5 h-5" />
               </button>

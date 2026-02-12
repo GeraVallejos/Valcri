@@ -1,7 +1,12 @@
 import { Phone, BrickWall, Mail, ArrowRight, Facebook, Instagram, Linkedin, MapPin } from 'lucide-react';
+import { useScrollSection } from '../hooks/useScrollSection';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
+
+  const scrollTo = useScrollSection();
+
   return (
     <footer className="bg-slate-950 text-slate-400 font-sans">
       {/* Sección Superior: CTA de Proyecto */}
@@ -11,7 +16,7 @@ const Footer = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">¿Tienes un proyecto en mente?</h2>
             <p className="text-slate-400">Hagamos realidad tu visión con los mejores estándares del mercado.</p>
           </div>
-          <button className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-orange-600/20">
+          <button onClick={() => scrollTo("contacto")} className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-orange-600/20">
             Comenzar Ahora
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -47,10 +52,10 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-bold mb-6">Nuestros Servicios</h3>
           <ul className="space-y-4 text-sm">
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Edificación Industrial</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Obra Civil y Vialidad</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Remodelaciones Premium</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Gestión de Proyectos</a></li>
+            <li>Edificación Industrial</li>
+            <li>Obra Civil y Vialidad</li>
+            <li>Remodelaciones Premium</li>
+            <li>Gestión de Proyectos</li>
           </ul>
         </div>
 
@@ -58,10 +63,10 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-bold mb-6">Empresa</h3>
           <ul className="space-y-4 text-sm">
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Sobre Nosotros</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Nuestros Proyectos</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Seguridad y Calidad</a></li>
-            <li><a href="#" className="hover:text-orange-500 transition-colors">Contacto</a></li>
+            <li><button onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Sobre Nosotros</button></li>
+            <li><button onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Nuestros Servicios</button></li>
+            <li><button onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Nuestros Proyectos</button></li>
+            <li><button onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button></li>
           </ul>
         </div>
 
@@ -90,8 +95,8 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs tracking-wider uppercase">
           <p>© 2026 GeraVallejos. Todos los derechos reservados.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-white transition-colors">Términos</a>
+            <Link to="/privacidad" className="hover:text-white transition-colors">Privacidad</Link>
+            <Link to="/terminos" className="hover:text-white transition-colors">Términos</Link>
           </div>
         </div>
       </div>

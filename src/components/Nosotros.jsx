@@ -39,7 +39,7 @@ const Nosotros = () => {
             </div>
             
             <p className="text-slate-600 text-lg leading-relaxed">
-              Vértice nació en 2009 con la firme convicción de elevar los estándares de la construcción civil. Lo que comenzó como una pequeña PyME familiar, hoy es un referente de innovación y seguridad en proyectos industriales y residenciales premium.
+              ValCri nació en 2009 con la firme convicción de elevar los estándares de la construcción civil. Lo que comenzó como una pequeña PyME familiar, hoy es un referente de innovación y seguridad en proyectos industriales y residenciales premium.
             </p>
 
             {/* Misión y Visión Grid */}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.valcri.cl/sitemap.xml
+Sitemap: https://valcri.cl/sitemap.xml

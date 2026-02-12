@@ -1,4 +1,4 @@
-import { Phone, Mail, Send } from 'lucide-react';
+import { Phone, Mail, Send, CheckCircle2, Loader2 } from 'lucide-react';
 import { useState } from 'react';
 
 const Contacto = () => {
@@ -17,27 +17,27 @@ const Contacto = () => {
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
+        method: "POST",
+        body: formData
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (data.success) {
-      setStatus("SUCCESS");
-      event.target.reset();
-      setTimeout(() => setStatus("IDLE"), 5000);
-    } else {
-      console.log("Error", data);
-      setStatus("ERROR");
-      setTimeout(() => setStatus("IDLE"), 5000);
-    }
+      if (data.success) {
+        setStatus("SUCCESS");
+        event.target.reset();
+        setTimeout(() => setStatus("IDLE"), 5000);
+      } else {
+        console.log("Error", data);
+        setStatus("ERROR");
+        setTimeout(() => setStatus("IDLE"), 5000);
+      }
     } catch (error) {
       console.log("Error al enviar el formulario:", error);
       setStatus("ERROR");
       setTimeout(() => setStatus("IDLE"), 5000);
     }
-    
+
   };
 
   return (
@@ -78,6 +78,15 @@ const Contacto = () => {
 
           {/* Formulario de Contacto */}
           <div className="lg:w-2/3 w-full">
+            {/* --- NOTIFICACIÓN FLOTANTE DE ÉXITO --- */}
+            {status === "SUCCESS" && (
+              <div className="absolute -top-12 left-0 right-0 flex justify-center animate-bounce-short">
+                <div className="bg-green-500 text-white px-6 py-2 rounded-full shadow-lg flex items-center gap-2 font-bold">
+                  <CheckCircle2 size={20} />
+                  ¡Mensaje enviado con éxito!
+                </div>
+              </div>
+            )}
             <div className="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm">
               <form onSubmit={onSubmit} className="grid sm:grid-cols-2 gap-6">
                 {/* --- CAMPOS OCULTOS DE CONFIGURACIÓN --- */}

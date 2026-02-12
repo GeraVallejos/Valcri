@@ -85,7 +85,7 @@ const Hero = () => {
               <div className="relative bg-slate-900/60 backdrop-blur-2xl border border-white/10 p-8 rounded-2xl shadow-2xl">
                 <h3 className="text-white font-bold text-xl mb-8 flex items-center gap-2">
                   <span className="w-1.5 h-6 bg-orange-500 rounded-full"></span>
-                  Vértice en números
+                  ValCri en números
                 </h3>
                 
                 <div className="space-y-8">

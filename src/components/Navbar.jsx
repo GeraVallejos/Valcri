@@ -121,7 +121,7 @@ const Navbar = () => {
           <button onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button>
           <button onClick={() => scrollTo("mapa")} className="hover:text-orange-500 transition-colors">Mapa</button>
           <div className="pt-2">
-            <a href="#" className="text-orange-500 font-bold flex items-center gap-2 py-2">
+            <a href= "tel:+56956846193" value= "+56 9 56846193" className="text-orange-500 font-bold flex items-center gap-2 py-2"  >
               <Phone className="w-4 h-4" /> Llamar ahora
             </a>
           </div>

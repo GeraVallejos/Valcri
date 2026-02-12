@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
 import HomePage from "./pages/HomePage";
-import PoliticaPrivacidad from "./components/PoliticaPrivacidad";
 import TerminosPage from "./pages/TerminosPage";
+import PrivacidadPage from "./pages/PrivacidadPage";
 
 
 export const getRoutes = () => createBrowserRouter([
@@ -15,7 +15,7 @@ export const getRoutes = () => createBrowserRouter([
             },
             {
                 path: "privacidad",
-                element: <PoliticaPrivacidad />,
+                element: <PrivacidadPage />,
             },
             {
                 path: "terminos",

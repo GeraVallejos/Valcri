@@ -36,7 +36,7 @@ const HomePage = () => {
         <>
             <Hero />
             <Servicios />
-            <Galeria />
+            {/* <Galeria /> */}
             <Nosotros />
             <Contacto />
             <Mapa />

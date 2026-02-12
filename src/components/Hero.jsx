@@ -48,14 +48,14 @@ const Hero = () => {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-              Construimos <br/>
+              ValCri Construcciones <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
-                Calidad y Confianza
+                Obra Civil y Remodelaciones
               </span>
             </h1>
 
             <p className="text-base md:text-xl text-slate-300 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Expertos en obra civil, remodelaciones industriales y arquitectura sustentable. Llevamos tu visión desde los planos hasta la realidad.
+              Expertos en construccion en Chile: obra civil, remodelaciones industriales y proyectos a medida. Llevamos tu vision desde los planos hasta la realidad.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-2 justify-center lg:justify-start">

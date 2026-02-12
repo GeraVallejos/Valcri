@@ -77,98 +77,107 @@ const Contacto = () => {
           </div>
 
           {/* Formulario de Contacto */}
-          <div className="lg:w-2/3 w-full">
-            {/* --- NOTIFICACIÓN FLOTANTE DE ÉXITO --- */}
+          <div className="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm relative overflow-hidden">
+
+            {/* --- MENSAJE DE ÉXITO--- */}
             {status === "SUCCESS" && (
-              <div className="absolute -top-12 left-0 right-0 flex justify-center animate-bounce-short">
-                <div className="bg-green-500 text-white px-6 py-2 rounded-full shadow-lg flex items-center gap-2 font-bold">
-                  <CheckCircle2 size={20} />
-                  ¡Mensaje enviado con éxito!
+              <div className="absolute inset-0 bg-white/90 z-10 flex flex-col items-center justify-center transition-all animate-in fade-in duration-500">
+                <div className="bg-green-100 p-4 rounded-full mb-4">
+                  <CheckCircle2 size={48} className="text-green-600" />
                 </div>
+                <h3 className="text-2xl font-bold text-slate-900">¡Mensaje Enviado!</h3>
+                <p className="text-slate-600 text-center mt-2 px-6">
+                  Gracias por contactarnos. Te responderemos a la brevedad.
+                </p>
+                <button
+                  onClick={() => setStatus("IDLE")}
+                  className="mt-6 text-orange-600 font-bold hover:underline"
+                >
+                  Enviar otro mensaje
+                </button>
               </div>
             )}
-            <div className="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm">
-              <form onSubmit={onSubmit} className="grid sm:grid-cols-2 gap-6">
-                {/* --- CAMPOS OCULTOS DE CONFIGURACIÓN --- */}
-                <input type="hidden" name="subject" value="Nueva solicitud de presupuesto" />
-                <input type="hidden" name="from_name" value="Mi Constructora Web" />
 
-                {/* Honeypot (Anti-spam): Si un bot lo llena, el correo no se envía */}
-                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
-                {/* --------------------------------------- */}
-                {/* Nombre */}
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Nombre Completo</label>
-                  <input
-                    name="name" // IMPORTANTE: Agregar atributo name
-                    type="text"
-                    required
-                    placeholder="Ej: Juan Pérez"
-                    className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white text-slate-900"
-                  />
-                </div>
+            <form onSubmit={onSubmit} className="grid sm:grid-cols-2 gap-6">
+              {/* --- CAMPOS OCULTOS DE CONFIGURACIÓN --- */}
+              <input type="hidden" name="subject" value="Nueva solicitud de presupuesto" />
+              <input type="hidden" name="from_name" value="Mi Constructora Web" />
 
-                {/* Email */}
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Email</label>
-                  <input
-                    name="email" // IMPORTANTE: Agregar atributo name
-                    type="email"
-                    required
-                    placeholder="juan@empresa.com"
-                    className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white text-slate-900"
-                  />
-                </div>
+              {/* Honeypot (Anti-spam): Si un bot lo llena, el correo no se envía */}
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+              {/* --------------------------------------- */}
+              {/* Nombre */}
+              <div className="space-y-2">
+                <label className="text-sm font-bold text-slate-700 ml-1">Nombre Completo</label>
+                <input
+                  name="name" // IMPORTANTE: Agregar atributo name
+                  type="text"
+                  required
+                  placeholder="Ej: Juan Pérez"
+                  className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white text-slate-900"
+                />
+              </div>
 
-                {/* Servicio */}
-                <div className="sm:col-span-2 space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Tipo de Servicio</label>
-                  <select name="service" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white appearance-none text-slate-900">
-                    <option>Construcción de Casa</option>
-                    <option>Estructuras Metálicas</option>
-                    <option>Obras Menores / Remodelación</option>
-                    <option>Otro Proyecto</option>
-                  </select>
-                </div>
+              {/* Email */}
+              <div className="space-y-2">
+                <label className="text-sm font-bold text-slate-700 ml-1">Email</label>
+                <input
+                  name="email" // IMPORTANTE: Agregar atributo name
+                  type="email"
+                  required
+                  placeholder="juan@empresa.com"
+                  className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white text-slate-900"
+                />
+              </div>
 
-                {/* Mensaje */}
-                <div className="sm:col-span-2 space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Mensaje o Detalles del Proyecto</label>
-                  <textarea
-                    name="message" // IMPORTANTE: Agregar atributo name
-                    required
-                    rows="4"
-                    placeholder="Cuéntanos un poco sobre lo que necesitas construir..."
-                    className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white resize-none text-slate-900"
-                  ></textarea>
-                </div>
+              {/* Servicio */}
+              <div className="sm:col-span-2 space-y-2">
+                <label className="text-sm font-bold text-slate-700 ml-1">Tipo de Servicio</label>
+                <select name="service" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white appearance-none text-slate-900">
+                  <option>Construcción de Casa</option>
+                  <option>Estructuras Metálicas</option>
+                  <option>Obras Menores / Remodelación</option>
+                  <option>Otro Proyecto</option>
+                </select>
+              </div>
 
-                <div className="sm:col-span-2 pt-2">
-                  <button
-                    type="submit"
-                    disabled={status === "SENDING"}
-                    className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-xl font-bold transition-all shadow-xl group
+              {/* Mensaje */}
+              <div className="sm:col-span-2 space-y-2">
+                <label className="text-sm font-bold text-slate-700 ml-1">Mensaje o Detalles del Proyecto</label>
+                <textarea
+                  name="message" // IMPORTANTE: Agregar atributo name
+                  required
+                  rows="4"
+                  placeholder="Cuéntanos un poco sobre lo que necesitas construir..."
+                  className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white resize-none text-slate-900"
+                ></textarea>
+              </div>
+
+              <div className="sm:col-span-2 pt-2">
+                <button
+                  type="submit"
+                  disabled={status === "SENDING"}
+                  className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-xl font-bold transition-all shadow-xl group
                 ${status === "SENDING" ? 'bg-slate-400 cursor-not-allowed' : 'bg-slate-900 hover:bg-orange-600 text-white shadow-slate-900/10 hover:shadow-orange-600/20'}`}
-                  >
-                    {status === "SENDING" ? (
-                      <>
-                        Enviando...
-                        <Loader2 size={18} className="animate-spin" />
-                      </>
-                    ) : (
-                      <>
-                        Enviar Solicitud
-                        <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                      </>
-                    )}
-                  </button>
-
-                  {status === "ERROR" && (
-                    <p className="text-red-500 text-sm mt-4 font-bold">Ocurrió un error. Inténtalo de nuevo.</p>
+                >
+                  {status === "SENDING" ? (
+                    <>
+                      Enviando...
+                      <Loader2 size={18} className="animate-spin" />
+                    </>
+                  ) : (
+                    <>
+                      Enviar Solicitud
+                      <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </>
                   )}
-                </div>
-              </form>
-            </div>
+                </button>
+
+                {status === "ERROR" && (
+                  <p className="text-red-500 text-sm mt-4 font-bold">Ocurrió un error. Inténtalo de nuevo.</p>
+                )}
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -73,7 +73,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8">
             <nav className="flex gap-6 font-medium">
               <button onClick={() => scrollTo("inicio")} className="hover:text-orange-500 transition-colors">Inicio</button>
-              <button onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Galería</button>
+              {/*<button onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Galería</button>*/}
               <button onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Servicios</button>
               <button onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Nosotros</button>
               <button onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button>

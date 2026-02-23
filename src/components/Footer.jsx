@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-sm leading-relaxed">
-            Líderes en soluciones constructivas innovadoras. Comprometidos con la excelencia operativa y la seguridad en cada obra desde 2009.
+            Líderes en soluciones constructivas innovadoras. Comprometidos con la excelencia operativa y la seguridad en cada obra desde 2018.
           </p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-orange-500 transition-colors"><Facebook size={20} /></a>
@@ -53,8 +53,8 @@ const Footer = () => {
           <h3 className="text-white font-bold mb-6">Nuestros Servicios</h3>
           <ul className="space-y-4 text-sm">
             <li>Edificación Industrial</li>
-            <li>Obra Civil y Vialidad</li>
-            <li>Remodelaciones Premium</li>
+            <li>Obras menores</li>
+            <li>Asesorías</li>
             <li>Gestión de Proyectos</li>
           </ul>
         </div>

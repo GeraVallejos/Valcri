@@ -23,7 +23,7 @@ const Nosotros = () => {
             <div className="absolute top-1/2 -translate-y-1/2 -right-8 bg-white p-6 rounded-xl shadow-xl z-20 hidden xl:block max-w-[200px] border border-slate-100">
               <div className="flex items-center gap-3 mb-2">
                 <Award className="text-orange-600 w-8 h-8" />
-                <span className="text-3xl font-bold text-slate-900">15</span>
+                <span className="text-3xl font-bold text-slate-900">8</span>
               </div>
               <p className="text-sm font-semibold text-slate-600 leading-tight">Años construyendo sueños con excelencia.</p>
             </div>
@@ -39,7 +39,8 @@ const Nosotros = () => {
             </div>
             
             <p className="text-slate-600 text-lg leading-relaxed">
-              ValCri nació en 2009 con la firme convicción de elevar los estándares de la construcción civil. Lo que comenzó como una pequeña PyME familiar, hoy es un referente de innovación y seguridad en proyectos industriales y residenciales premium.
+              Desde 2018, en Valcri Construcciones lideramos proyectos de carpintería y estructuras metálicas bajo estándares de máxima seguridad.
+              Brindamos asesoría técnica desde la planificación y respaldo total post-obra para asegurar el éxito de cada inversión.
             </p>
 
             {/* Misión y Visión Grid */}
@@ -52,7 +53,7 @@ const Nosotros = () => {
                   Misión
                 </div>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Entregar soluciones constructivas que superen las expectativas de calidad, tiempo y presupuesto, garantizando la seguridad absoluta.
+                  Proveer soluciones integrales en estructuras metálicas y obras menores, garantizando seguridad, calidad técnica y cumplimiento riguroso en cada proyecto.
                 </p>
               </div>
 
@@ -64,7 +65,7 @@ const Nosotros = () => {
                   Visión
                 </div>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Ser la constructora líder en sostenibilidad e innovación tecnológica, transformando el paisaje urbano de forma responsable.
+                  Ser el socio estratégico líder en construcción industrial y comercial, reconocidos por nuestra innovación estructural y el respaldo total a nuestros clientes.
                 </p>
               </div>
             </div>

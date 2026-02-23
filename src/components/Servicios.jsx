@@ -7,22 +7,22 @@ const Servicios = () => {
 
   const services = [
     {
-      title: "Estructuras Metálicas",
-      description: "Diseño, fabricación y montaje de estructuras de alta resistencia para galpones, naves industriales y refuerzos estructurales de gran escala.",
+      title: "Carpintería Metálica",
+      description: "Trabajamos con acero y otros metales para desarrollar soluciones resistentes, funcionales y estéticas, adaptadas a proyectos residenciales, comerciales e industriales. Fabricamos portones, rejas, barandas, escaleras, cerramientos, estructuras livianas y todo tipo de trabajos a medida.",
       icon: <Factory className="w-8 h-8" />,
+      image: "reja.jpg"
+    },
+    {
+      title: "Estructuras Metálicas",
+      description: "Expertos en soluciones estructurales, desde galpones y techumbres hasta soportes a medida, bajo estrictos estándares de calidad. Transformamos sus necesidades en estructuras resistentes y eficientes, asegurando durabilidad y una planificación profesional.",
+      icon: <Home className="w-8 h-8" />,
       image: "estructuras_metalicas.jpg"
     },
     {
-      title: "Construcción de Casas",
-      description: "Proyectos llave en mano. Desde la cimentación hasta las terminaciones finas, construimos el hogar de tus sueños con estándares residenciales premium.",
-      icon: <Home className="w-8 h-8" />,
-      image: "remodelacion_casa.avif"
-    },
-    {
       title: "Obras Menores",
-      description: "Ampliaciones, remodelaciones de baños y cocinas, pintura, techumbres y mantenimiento general con personal altamente calificado.",
+      description: "Especialistas en obras menores, remodelaciones y habilitación de faenas para espacios comerciales e industriales con soluciones prácticas. Ejecutamos estructuras en madera, divisiones funcionales y optimización de recintos bajo estrictos controles de costo y plazos.",
       icon: <Hammer className="w-8 h-8" />,
-      image: "/cocina_obras_menores.jpg"
+      image: "/pintura.jpg"
     }
   ];
 

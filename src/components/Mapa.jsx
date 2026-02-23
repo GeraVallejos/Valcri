@@ -22,7 +22,7 @@ const Mapa = () => {
               <span className="text-orange-500">Oficina</span>
             </h2>
             <p className="text-slate-400 mb-8 leading-relaxed">
-              Estamos ubicados en el corazón del sector industrial, listos para recibirte y discutir los detalles de tu próximo gran proyecto de construcción.
+              Ubicados en la comuna de Renca, estamos listos para recibirte y discutir los detalles de tu próximo gran proyecto de construcción.
             </p>
 
             <div className="space-y-6 mb-8">

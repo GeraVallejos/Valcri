@@ -93,7 +93,7 @@ const Footer = () => {
       {/* Sección Inferior: Copyright */}
       <div className="border-t border-white/5">
         <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs tracking-wider uppercase">
-          <p>© 2026 GeraVallejos. Todos los derechos reservados.</p>
+          <p>© 2026 Eldanor Software. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <Link to="/privacidad" className="hover:text-white transition-colors">Privacidad</Link>
             <Link to="/terminos" className="hover:text-white transition-colors">Términos</Link>

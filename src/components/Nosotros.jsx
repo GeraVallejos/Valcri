@@ -10,7 +10,7 @@ const Nosotros = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" 
+                src="construccion.webp" 
                 alt="Equipo de construcción trabajando" 
                 className="w-full h-full object-cover"
               />

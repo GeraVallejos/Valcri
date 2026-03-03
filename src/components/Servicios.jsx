@@ -10,19 +10,19 @@ const Servicios = () => {
       title: "Carpintería Metálica",
       description: "Trabajamos con acero y otros metales para desarrollar soluciones resistentes, funcionales y estéticas, adaptadas a proyectos residenciales, comerciales e industriales. Fabricamos portones, rejas, barandas, escaleras, cerramientos, estructuras livianas y todo tipo de trabajos a medida.",
       icon: <Factory className="w-8 h-8" />,
-      image: "reja.jpg"
+      image: "reja.webp"
     },
     {
       title: "Estructuras Metálicas",
       description: "Expertos en soluciones estructurales, desde galpones y techumbres hasta soportes a medida, bajo estrictos estándares de calidad. Transformamos sus necesidades en estructuras resistentes y eficientes, asegurando durabilidad y una planificación profesional.",
       icon: <Home className="w-8 h-8" />,
-      image: "estructuras_metalicas.jpg"
+      image: "estructuras_metalicas.webp"
     },
     {
       title: "Obras Menores",
       description: "Especialistas en obras menores, remodelaciones y habilitación de faenas para espacios comerciales e industriales con soluciones prácticas. Ejecutamos estructuras en madera, divisiones funcionales y optimización de recintos bajo estrictos controles de costo y plazos.",
       icon: <Hammer className="w-8 h-8" />,
-      image: "/pintura.jpg"
+      image: "/pintura.webp"
     }
   ];
 

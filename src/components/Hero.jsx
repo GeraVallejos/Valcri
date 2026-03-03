@@ -21,7 +21,7 @@ const Hero = () => {
       */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop"
+          src="construccion_hero.webp"
           alt="Fondo de construcción profesional"
           className="w-full h-full object-cover object-center scale-105"
         />

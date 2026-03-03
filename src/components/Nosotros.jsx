@@ -32,7 +32,7 @@ const Nosotros = () => {
           {/* Contenido de Texto */}
           <div className="lg:w-1/2 space-y-8">
             <div>
-              <span className="text-orange-600 font-bold uppercase tracking-widest text-sm italic">Sobre Nosotros</span>
+              <span className="text-orange-600 font-bold uppercase tracking-widest text-lg italic">Sobre Nosotros</span>
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-3 leading-tight">
                 Más que edificios, <span className="text-orange-600">construimos legados.</span>
               </h2>

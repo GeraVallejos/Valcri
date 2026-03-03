@@ -46,7 +46,7 @@ const Contacto = () => {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Información Lateral */}
           <div className="lg:w-1/3">
-            <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">Hablemos</span>
+            <span className="text-orange-600 font-bold uppercase tracking-widest text-lg">Hablemos</span>
             <h1 className="text-4xl font-bold text-slate-900 mt-3 mb-6 leading-tight">
               ¿Listo para dar el <span className="text-orange-600">siguiente paso?</span>
             </h1>

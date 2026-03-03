@@ -21,6 +21,7 @@ const Hero = () => {
       */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img
+          fetchpriority="high"
           src="construccion_hero.webp"
           alt="Fondo de construcción profesional"
           className="w-full h-full object-cover object-center scale-105"
@@ -82,21 +83,21 @@ const Hero = () => {
               <div className="flex -space-x-3">
                 {/* Imagen con Tooltip */}
                 <div className="group relative flex justify-center">
-                  <img className="w-10 h-10 rounded-full border-2 border-slate-950 object-cover" src="/ecasa.png" alt="Ecasa" />
+                  <img className="w-10 h-10 rounded-full border-2 border-slate-950 object-cover" src="/ecasa.webp" alt="Ecasa" />
                   <span className="absolute bottom-full mb-2 scale-0 rounded bg-slate-800 p-2 text-xs text-white group-hover:scale-100 transition-all">
                     Ecasa
                   </span>
                 </div>
 
                 <div className="group relative flex justify-center">
-                  <img className="w-10 h-10 rounded-full border-2 border-slate-950 object-cover" src="/molina_morel.png" alt="Molina Morel" />
+                  <img className="w-10 h-10 rounded-full border-2 border-slate-950 object-cover" src="/molina_morel.webp" alt="Molina Morel" />
                   <span className="absolute bottom-full mb-2 scale-0 rounded bg-slate-800 p-2 text-xs text-white group-hover:scale-100 transition-all">
                     Molina Morel
                   </span>
                 </div>
 
                 <div className="group relative flex justify-center">
-                  <img className="w-10 h-10 rounded-full border-2 border-slate-950 object-cover" src="/lotus.png" alt="Lotus" />
+                  <img className="w-10 h-10 rounded-full border-2 border-slate-950 object-cover" src="/lotus.webp" alt="Lotus" />
                   <span className="absolute bottom-full mb-2 scale-0 rounded bg-slate-800 p-2 text-xs text-white group-hover:scale-100 transition-all">
                     Lotus
                   </span>

@@ -47,9 +47,9 @@ const Contacto = () => {
           {/* Información Lateral */}
           <div className="lg:w-1/3">
             <span className="text-orange-600 font-bold uppercase tracking-widest text-lg">Hablemos</span>
-            <h1 className="text-4xl font-bold text-slate-900 mt-3 mb-6 leading-tight">
+            <h2 className="text-4xl font-bold text-slate-900 mt-3 mb-6 leading-tight">
               ¿Listo para dar el <span className="text-orange-600">siguiente paso?</span>
-            </h1>
+            </h2>
             <p className="text-slate-600 mb-10 leading-relaxed">
               Nuestro equipo de expertos está listo para asesorarte en la planificación técnica y financiera de tu obra.
             </p>

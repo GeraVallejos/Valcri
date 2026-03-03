@@ -59,14 +59,14 @@ const Mapa = () => {
           </div>
 
           {/* Mapa Interactivo */}
-          <div className="lg:w-2/3 relative min-h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+          <div className="lg:w-2/3 relative min-h-100 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             {/* Overlay para "oscurecer" el mapa de Google Maps estándar y que encaje con el tema oscuro */}
             <div className="absolute inset-0 pointer-events-none z-10 bg-slate-900/10 mix-blend-multiply"></div>
             
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13321.672205639072!2d-70.6837169!3d-33.4123437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c4266168db03%3A0xa079cc66a1c4466f!2sEstudio%20Contable%20J.V.D!5e0!3m2!1ses-419!2scl!4v1770747289785!5m2!1ses-419!2scl"
               title="Ubicación de ValCri en Google Maps"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full grayscale-[0.8] invert-[0.9] contrast-[1.2] brightness-[0.8]"
               style={{ border: 0, minHeight: '450px' }} 
               allowFullScreen="" 

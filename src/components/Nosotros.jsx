@@ -16,11 +16,11 @@ const Nosotros = () => {
               />
             </div>
             {/* Elementos decorativos */}
-            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-orange-600 rounded-2xl -z-0 hidden md:block"></div>
-            <div className="absolute -top-6 -left-6 border-8 border-slate-100 w-32 h-32 -z-0 hidden md:block"></div>
+            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-orange-600 rounded-2xl z-0 hidden md:block"></div>
+            <div className="absolute -top-6 -left-6 border-8 border-slate-100 w-32 h-32 z-0 hidden md:block"></div>
             
             {/* Tarjeta Flotante de Experiencia */}
-            <div className="absolute top-1/2 -translate-y-1/2 -right-8 bg-white p-6 rounded-xl shadow-xl z-20 hidden xl:block max-w-[200px] border border-slate-100">
+            <div className="absolute top-1/2 -translate-y-1/2 -right-8 bg-white p-6 rounded-xl shadow-xl z-20 hidden xl:block max-w-50 border border-slate-100">
               <div className="flex items-center gap-3 mb-2">
                 <Award className="text-orange-600 w-8 h-8" />
                 <span className="text-3xl font-bold text-slate-900">8</span>

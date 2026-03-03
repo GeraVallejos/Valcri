@@ -14,7 +14,7 @@ const Hero = () => {
   const scrollTo = useScrollSection();
 
   return (
-    <section className="relative w-full h-[85vh] min-h-[900px] flex items-center overflow-hidden bg-slate-900 font-sans" id='inicio' data-theme="dark">
+    <section className="relative w-full h-[85vh] min-h-225 flex items-center overflow-hidden bg-slate-900 font-sans" id='inicio' data-theme="dark">
 
       {/* 1. CAPA DE FONDO (POSICIÓN ABSOLUTA)
           'absolute inset-0' asegura que la imagen cubra todo el contenedor del section.
@@ -27,7 +27,7 @@ const Hero = () => {
         />
 
         {/* Overlay dinámico: Oscurece la imagen para que el texto sea legible */}
-        <div className="absolute inset-0 bg-slate-950/80 lg:bg-gradient-to-r lg:from-slate-950 lg:via-slate-900/70 lg:to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-slate-950/80 lg:bg-linear-to-r lg:from-slate-950 lg:via-slate-900/70 lg:to-transparent z-10"></div>
       </div>
 
       {/* 2. CAPA DE CONTENIDO (Z-INDEX SUPERIOR)
@@ -55,7 +55,7 @@ const Hero = () => {
               {/* Aumentamos el tamaño y permitimos que se extienda más */}
               <span className="text-5xl md:text-5xl lg:text-6xl font-black text-white leading-[0.95] tracking-tighter">
                 Estructuras Metálicas <br className="hidden md:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-yellow-500">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-400 via-orange-500 to-yellow-500">
                   Obras Menores
                 </span>
               </span>
@@ -136,7 +136,7 @@ const Hero = () => {
       </div>
 
       {/* Decoración: Gradiente inferior para suavizar la transición al resto de la página */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-950 to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-slate-950 to-transparent z-10 pointer-events-none"></div>
     </section>
   );
 };

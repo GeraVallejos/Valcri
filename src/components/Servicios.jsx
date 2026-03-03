@@ -47,16 +47,16 @@ const Servicios = () => {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 p-3 bg-orange-600 rounded-xl text-white shadow-lg">
                   {service.icon}
                 </div>
               </div>
 
               {/* Contenido */}
-              <div className="p-8 flex-grow flex flex-col">
+              <div className="p-8 grow flex flex-col">
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">{service.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 grow">
                   {service.description}
                 </p>
                 <div className="pt-6 border-t border-slate-50 flex items-center justify-between">

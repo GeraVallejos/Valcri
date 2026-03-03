@@ -61,9 +61,9 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-lg md:text-2xl text-slate-300/90 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
+            <h2 className="text-lg md:text-2xl text-slate-300/90 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
               En Valcri Construcciones contamos con 8 años de experiencia en el sector de la construcción, especializados en carpintería metálica y estructuras metálicas.
-            </p>
+            </h2>
 
             <div className="flex flex-col sm:flex-row gap-6 mt-4 justify-center lg:justify-start">
               <button onClick={() => scrollTo("contacto")} className="group flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-xl font-bold transition-all shadow-2xl shadow-orange-600/30 hover:-translate-y-1 text-lg">
@@ -110,7 +110,6 @@ const Hero = () => {
           <div className="lg:col-span-4 relative hidden lg:block">
             {/* Aquí tus estadísticas se verán como un complemento lateral y no como algo que aprieta al texto */}
             <div className="relative bg-slate-900/40 backdrop-blur-3xl border border-white/10 p-8 rounded-3xl shadow-2xl">
-
 
               <h3 className="text-white font-bold text-xl mb-8 flex items-center gap-2">
                 <span className="w-1.5 h-6 bg-orange-500 rounded-full"></span>

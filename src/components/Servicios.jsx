@@ -30,7 +30,7 @@ const Servicios = () => {
     <section className="py-12 bg-slate-50 overflow-hidden" id='servicios' data-theme="light">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">Nuestra Especialidad</span>
+          <span className="text-orange-600 font-bold uppercase tracking-widest text-2xl">Nuestra Especialidad</span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-6">Soluciones integrales de <span className="text-orange-600">construcción</span></h2>
           <p className="text-slate-600 text-lg leading-relaxed">
             Contamos con la infraestructura y el equipo técnico necesario para abordar proyectos de diversa complejidad, garantizando durabilidad y cumplimiento.
@@ -55,12 +55,12 @@ const Servicios = () => {
 
               {/* Contenido */}
               <div className="p-8 grow flex flex-col">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">{service.title}</h3>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">{service.title}</h2>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6 grow">
                   {service.description}
                 </p>
                 <div className="pt-6 border-t border-slate-50 flex items-center justify-between">
-                  <span className="text-slate-900 font-bold text-sm flex items-center gap-2 italic">
+                  <span className="text-slate-900 font-bold text-xl flex items-center gap-2 italic">
                     <ShieldCheck className="text-orange-600 w-4 h-4" /> Garantía de calidad
                   </span>
                   <button
@@ -73,7 +73,7 @@ const Servicios = () => {
                         if (select) select.value = service.title;
                       }, 500);
                     }}
-                    className="text-orange-600 hover:text-orange-700 font-bold text-sm flex items-center gap-1 group/btn transition-colors"
+                    className="text-orange-600 hover:text-orange-700 font-bold text-xl flex items-center gap-1 group/btn transition-colors"
                   >
                     Cotizar Proyecto <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>

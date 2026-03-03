@@ -67,7 +67,7 @@ const Hero = () => {
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-6 mt-4 justify-center lg:justify-start">
-              <button aria-label='A Contacto' onClick={() => scrollTo("contacto")} className="group flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-xl font-bold transition-all shadow-2xl shadow-orange-600/30 hover:-translate-y-1 text-lg">
+              <button aria-label='A Contacto' onClick={() => scrollTo("contacto")} className="group flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-xl font-bold transition-all shadow-2xl shadow-orange-600/30 hover:-translate-y-1 text-xl">
                 Cotizar Proyecto
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -112,10 +112,10 @@ const Hero = () => {
             {/* Aquí tus estadísticas se verán como un complemento lateral y no como algo que aprieta al texto */}
             <div className="relative bg-slate-900/40 backdrop-blur-3xl border border-white/10 p-8 rounded-3xl shadow-2xl">
 
-              <h3 className="text-white font-bold text-xl mb-8 flex items-center gap-2">
+              <h2 className="text-white font-bold text-xl mb-8 flex items-center gap-2">
                 <span className="w-1.5 h-6 bg-orange-500 rounded-full"></span>
                 ValCri en números
-              </h3>
+              </h2>
 
               <div className="space-y-8">
                 {stats.map((stat) => (

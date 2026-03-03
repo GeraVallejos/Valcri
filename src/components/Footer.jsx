@@ -41,11 +41,6 @@ const Footer = () => {
           <p className="text-sm leading-relaxed">
             Líderes en soluciones constructivas innovadoras. Comprometidos con la excelencia operativa y la seguridad en cada obra desde 2018.
           </p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-orange-500 transition-colors"><Facebook size={20} /></a>
-            <a href="#" className="hover:text-orange-500 transition-colors"><Instagram size={20} /></a>
-            <a href="#" className="hover:text-orange-500 transition-colors"><Linkedin size={20} /></a>
-          </div>
         </div>
 
         {/* Columna 2: Servicios */}

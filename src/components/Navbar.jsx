@@ -58,7 +58,7 @@ const Navbar = () => {
 
           {/* Logo - El texto de VALCRI cambiará de color solo si no es una imagen fija */}
           <div className="flex items-center gap-2">
-            <img src="/valcri_icono.png" alt="Logo ValCri" className="w-12 h-12 rounded-full border-2 border-orange-500" />
+            <img src="/valcri_icono.webp" alt="Logo ValCri" className="w-12 h-12 rounded-full border-2 border-orange-500" />
             <div className="flex flex-col leading-none">
               <span className={`text-2xl font-black tracking-tighter transition-colors ${navTextColor}`}>
                 VALCRI

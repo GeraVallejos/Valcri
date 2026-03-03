@@ -31,7 +31,7 @@ const Mapa = () => {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-1 text-sm">Dirección</h4>
+                  <h2 className="text-white font-semibold mb-1 text-sm">Dirección</h2>
                   <p className="text-slate-400 text-sm italic">Av. Domingo Santa María 2950, Renca, Chile</p>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const Mapa = () => {
                   <Clock size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-1 text-sm">Horario de Atención</h4>
+                  <h2 className="text-white font-semibold mb-1 text-sm">Horario de Atención</h2>
                   <p className="text-slate-400 text-sm">Lun - Vie: 09:00 - 18:00</p>
                 </div>
               </div>

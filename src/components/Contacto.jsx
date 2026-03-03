@@ -47,9 +47,9 @@ const Contacto = () => {
           {/* Información Lateral */}
           <div className="lg:w-1/3">
             <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">Hablemos</span>
-            <h2 className="text-4xl font-bold text-slate-900 mt-3 mb-6 leading-tight">
+            <h1 className="text-4xl font-bold text-slate-900 mt-3 mb-6 leading-tight">
               ¿Listo para dar el <span className="text-orange-600">siguiente paso?</span>
-            </h2>
+            </h1>
             <p className="text-slate-600 mb-10 leading-relaxed">
               Nuestro equipo de expertos está listo para asesorarte en la planificación técnica y financiera de tu obra.
             </p>
@@ -67,7 +67,7 @@ const Contacto = () => {
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wide">{item.label}</h4>
+                    <h2 className="font-bold text-slate-900 text-sm uppercase tracking-wide">{item.label}</h2>
                     <p className="text-slate-600 group-hover:text-orange-600 transition-colors">{item.value}</p>
                   </div>
                 </a>
@@ -130,9 +130,9 @@ const Contacto = () => {
               </div>
 
               {/* Servicio */}
-              <div htmlFor="servicio" className="sm:col-span-2 space-y-2">
-                <label className="text-sm font-bold text-slate-700 ml-1 sr-only">Tipo de Servicio</label>
-                <select name="service" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white appearance-none text-slate-900">
+              <div className="sm:col-span-2 space-y-2">
+                <label htmlFor="service" className="text-sm font-bold text-slate-700 ml-1 sr-only">Tipo de Servicio</label>
+                <select id='service' name="service" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all bg-white appearance-none text-slate-900">
                   <option value="Estructuras Metálicas">Estructuras Metálicas</option>
                   <option value="Construcción de Casas">Construcción de Casa</option>
                   <option value="Obras Menores">Obras Menores / Remodelación</option>

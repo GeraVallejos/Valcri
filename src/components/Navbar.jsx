@@ -72,12 +72,12 @@ const Navbar = () => {
           {/* Menú Desktop */}
           <div className="hidden md:flex items-center gap-8">
             <nav className="flex gap-6 font-medium">
-              <button onClick={() => scrollTo("inicio")} className="hover:text-orange-500 transition-colors">Inicio</button>
-              {/*<button onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Galería</button>*/}
-              <button onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Servicios</button>
-              <button onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Nosotros</button>
-              <button onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button>
-              <button onClick={() => scrollTo("mapa")} className="hover:text-orange-500 transition-colors">Mapa</button>
+              <button aria-label='Al Inicio' onClick={() => scrollTo("inicio")} className="hover:text-orange-500 transition-colors">Inicio</button>
+              {/*<button aria-label='A la Galería' onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Galería</button>*/}
+              <button aria-label='A los Servicios' onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Servicios</button>
+              <button aria-label='A Nosotros' onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Nosotros</button>
+              <button aria-label='Al Contacto' onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button>
+              <button aria-label='Al Mapa' onClick={() => scrollTo("mapa")} className="hover:text-orange-500 transition-colors">Mapa</button>
             </nav>
           </div>
 
@@ -95,6 +95,7 @@ const Navbar = () => {
             </a>
 
             <button
+              aria-label='Toggle Menu'
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`md:hidden p-1 rounded-md transition-colors ${isDarkTheme ? 'text-white hover:bg-white/10' : 'text-slate-900 hover:bg-slate-100'}`}
             >
@@ -114,12 +115,12 @@ const Navbar = () => {
             : 'bg-white border-slate-200'    // Colores modo claro
           }
   `}>
-          <button onClick={() => scrollTo("inicio")} className="hover:text-orange-500 transition-colors">Inicio</button>
-          {/*<button onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Galería</button>*/}
-          <button onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Servicios</button>
-          <button onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Nosotros</button>
-          <button onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button>
-          <button onClick={() => scrollTo("mapa")} className="hover:text-orange-500 transition-colors">Mapa</button>
+          <button aria-label='Al Inicio' onClick={() => scrollTo("inicio")} className="hover:text-orange-500 transition-colors">Inicio</button>
+          {/*<button aria-label='A la Galería' onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Galería</button>*/}
+          <button aria-label='A los Servicios' onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Servicios</button>
+          <button aria-label='A Nosotros' onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Nosotros</button>
+          <button aria-label='Al Contacto' onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button>
+          <button aria-label='Al Mapa' onClick={() => scrollTo("mapa")} className="hover:text-orange-500 transition-colors">Mapa</button>
           <div className="pt-2">
             <a href= "tel:+56956846193" value= "+56 9 56846193" className="text-orange-500 font-bold flex items-center gap-2 py-2"  >
               <Phone className="w-4 h-4" /> Llamar ahora

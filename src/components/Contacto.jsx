@@ -154,6 +154,7 @@ const Contacto = () => {
 
               <div className="sm:col-span-2 pt-2">
                 <button
+                  aria-label='Enviar Solicitud'
                   type="submit"
                   disabled={status === "SENDING"}
                   className={`w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-xl font-bold transition-all shadow-xl group

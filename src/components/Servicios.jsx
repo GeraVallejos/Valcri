@@ -64,6 +64,7 @@ const Servicios = () => {
                     <ShieldCheck className="text-orange-600 w-4 h-4" /> Garantía de calidad
                   </span>
                   <button
+                    aria-label='A Contacto'
                     onClick={() => {
                       scrollTo("contacto");
                       // Opcional: Pequeño delay para que el select cambie después del inicio del scroll

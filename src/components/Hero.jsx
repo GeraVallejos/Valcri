@@ -66,12 +66,12 @@ const Hero = () => {
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-6 mt-4 justify-center lg:justify-start">
-              <button onClick={() => scrollTo("contacto")} className="group flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-xl font-bold transition-all shadow-2xl shadow-orange-600/30 hover:-translate-y-1 text-lg">
+              <button aria-label='A Contacto' onClick={() => scrollTo("contacto")} className="group flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-xl font-bold transition-all shadow-2xl shadow-orange-600/30 hover:-translate-y-1 text-lg">
                 Cotizar Proyecto
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </button>
 
-              <button className="flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white px-10 py-5 rounded-xl font-bold transition-all border border-white/10 backdrop-blur-md text-lg">
+              <button aria-label='A Galeria' className="flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white px-10 py-5 rounded-xl font-bold transition-all border border-white/10 backdrop-blur-md text-lg">
                 Ver Portafolio
               </button>
             </div>

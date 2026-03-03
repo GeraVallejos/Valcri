@@ -16,7 +16,7 @@ const Footer = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">¿Tienes un proyecto en mente?</h2>
             <p className="text-slate-400">Hagamos realidad tu visión con los mejores estándares del mercado.</p>
           </div>
-          <button onClick={() => scrollTo("contacto")} className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-orange-600/20">
+          <button aria-label='A Contacto' onClick={() => scrollTo("contacto")} className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-orange-600/20">
             Comenzar Ahora
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -63,10 +63,10 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-bold mb-6">Empresa</h3>
           <ul className="space-y-4 text-sm">
-            <li><button onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Sobre Nosotros</button></li>
-            <li><button onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Nuestros Servicios</button></li>
-            <li><button onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Nuestros Proyectos</button></li>
-            <li><button onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button></li>
+            <li><button aria-label='A Nosotros' onClick={() => scrollTo("nosotros")} className="hover:text-orange-500 transition-colors">Sobre Nosotros</button></li>
+            <li><button aria-label='A Servicios' onClick={() => scrollTo("servicios")} className="hover:text-orange-500 transition-colors">Nuestros Servicios</button></li>
+            <li><button aria-label='A Galeria' onClick={() => scrollTo("galeria")} className="hover:text-orange-500 transition-colors">Nuestros Proyectos</button></li>
+            <li><button aria-label='A Contacto' onClick={() => scrollTo("contacto")} className="hover:text-orange-500 transition-colors">Contacto</button></li>
           </ul>
         </div>
 
@@ -95,8 +95,8 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs tracking-wider uppercase">
           <p>© 2026 Eldanor Software. Todos los derechos reservados.</p>
           <div className="flex gap-6">
-            <Link to="/privacidad" className="hover:text-white transition-colors">Privacidad</Link>
-            <Link to="/terminos" className="hover:text-white transition-colors">Términos</Link>
+            <Link aria-label='A Privacidad' to="/privacidad" className="hover:text-white transition-colors">Privacidad</Link>
+            <Link aria-label='A Términos' to="/terminos" className="hover:text-white transition-colors">Términos</Link>
           </div>
         </div>
       </div>

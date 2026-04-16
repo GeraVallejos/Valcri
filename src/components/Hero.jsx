@@ -14,7 +14,7 @@ const Hero = () => {
   const scrollTo = useScrollSection();
 
   return (
-    <section className="relative w-full h-[85vh] min-h-225 flex items-center overflow-hidden bg-slate-900 font-sans" id='inicio' data-theme="dark">
+    <section className="relative w-full h-[85vh] min-h-225 flex items-start lg:items-center pt-28 md:pt-32 lg:pt-0 overflow-hidden bg-slate-900 font-sans" id='inicio' data-theme="dark">
 
       {/* 1. CAPA DE FONDO (POSICIÓN ABSOLUTA)
           'absolute inset-0' asegura que la imagen cubra todo el contenedor del section.
@@ -34,7 +34,7 @@ const Hero = () => {
       {/* 2. CAPA DE CONTENIDO (Z-INDEX SUPERIOR)
           Al usar 'relative z-20', este contenido se dibuja encima de la imagen.
       */}
-      <div className="container mx-auto px-6 relative z-20">
+      <div className="container mx-auto px-5 sm:px-6 relative z-20">
         {/* Cambiamos grid-cols-2 por una estructura de 12 columnas para más control */}
         <div className="grid lg:grid-cols-12 gap-12 items-center">
 
@@ -50,7 +50,7 @@ const Hero = () => {
             </div>
 
             <h1 className="flex flex-col gap-3">
-              <span className="text-xl md:text-2xl font-bold text-orange-500 uppercase tracking-[0.3em]">
+              <span className="text-lg sm:text-xl md:text-2xl font-bold text-orange-500 uppercase tracking-[0.2em] sm:tracking-[0.3em]">
                 ValCri Construcciones
               </span>
               {/* Aumentamos el tamaño y permitimos que se extienda más */}
